@@ -1,0 +1,182 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: normal;
+  color: #14171a;
+  border: 0;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+  cursor: pointer;
+  color: #14171a;
+}
+
+button {
+  background: none;
+  border: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.nav {
+  width: 580px;
+  margin: 20px auto;
+}
+
+.nav ul {
+  display: flex;
+  display: -webkit-flex;
+}
+
+.nav li {
+  flex: 1 0 auto;
+  padding: 10px;
+  text-align: center;
+}
+
+.nav a {
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.nav a:active,
+.nav a:visited {
+  color: rebeccapurple;
+}
+
+.container {
+  width: 580px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+}
+
+.icon_like {
+  background-image: url("./assets/svg/heart-shape.svg");
+}
+.icon_reply {
+  background-image: url("./assets/svg/reply-back.svg");
+}
+
+.tweet {
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 10px;
+  border: 1px solid #e6ecf0;
+}
+
+.tweet:not(:first-child) {
+  margin-top: 20px;
+}
+
+.tweet__avatar {
+  flex: 0 0 48px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  justify-content: left;
+  margin-right: 20px;
+}
+
+.tweet__data {
+  flex: 0 0 calc(100% - 68px);
+}
+
+.tweet__name {
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.tweet__login {
+  color: #657786;
+  font-size: 1em;
+}
+
+.tweet__date {
+  color: #657786;
+  font-size: 1em;
+}
+
+.tweet__desc {
+  font-size: 1em;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.add-tweet {
+  width: 100%;
+}
+
+.add-tweet__header {
+  font-size: 1.8em;
+  text-align: center;
+}
+
+.add-tweet__text {
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #e6ecf0;
+  min-height: 100px;
+}
+
+.add-tweet__button {
+  display: block;
+  width: 50%;
+  padding: 10px;
+  font-size: 1.2em;
+  border: 1px solid #e6ecf0;
+  margin: 0 auto;
+  cursor: pointer;
+  color: #657786;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.add-tweet__button:disabled {
+  background: #e6ecf040;
+  color: #65778645;
+}
+
+@media only screen and (max-width: 581px) {
+  .nav {
+    width: 100%;
+    padding: 0;
+    margin: 20px 0;
+  }
+  .container {
+    width: 100%;
+    padding: 0 10px;
+    margin: 0;
+  }
+  .tweet__data {
+    flex: 0 0 100%;
+  }
+}

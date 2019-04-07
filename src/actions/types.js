@@ -1,0 +1,6 @@
+export const RECEIVE_USERS = "RECEIVE_USERS";
+export const RECEIVE_TWEETS = "RECEIVE_TWEETS";
+export const LIKE_TWEET = "LIKE_TWEET";
+export const CREATE_TWEET = "CREATE_TWEET";
+export const GET_INITIAL_DATA = "GET_INITIAL_DATA";
+export const SET_CURRENT_USER = "SET_CURRENT_USER";

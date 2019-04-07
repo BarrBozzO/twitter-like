@@ -29,8 +29,9 @@ function Tweet(props) {
             <i className="icon icon_reply" />
           </button>
           <button className="btn" onClick={handleLikeClick}>
-            <i className="icon icon_like" />
+            <i className={`icon icon_like${tweet.hasLiked ? "-active" : ""}`} />
           </button>
+          {tweet.likes > 0 ? <span>{tweet.likes}</span> : null}
         </div>
       </div>
     </Link>
